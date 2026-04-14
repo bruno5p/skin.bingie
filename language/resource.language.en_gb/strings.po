@@ -2377,3 +2377,28 @@ msgstr ""
 msgctxt "#31579"
 msgid "color for play icon"
 msgstr ""
+
+
+msgctxt "#31580"
+msgid "Font"
+msgstr ""
+
+msgctxt "#31581"
+msgid "Default (Netflix Sans)"
+msgstr ""
+
+msgctxt "#31582"
+msgid "Inter"
+msgstr ""
+
+msgctxt "#31583"
+msgid "Noto Sans JP (Japanese/CJK Support)"
+msgstr ""
+
+msgctxt "#31584"
+msgid "Noto Sans JP Bold (Japanese/CJK)"
+msgstr ""
+
+msgctxt "#31585"
+msgid "Noto Sans (Estuary)"
+msgstr ""

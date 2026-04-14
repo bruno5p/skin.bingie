@@ -1047,7 +1047,7 @@
 					<align>center</align>
 					<label>$LOCALIZE[21427]</label>
 					<onclick>RunScript(script.bingie.toolbox,action=setskinsetting,setting=$VAR[catnum]widgetlimit,header=$LOCALIZE[21427])</onclick>
-				</control>  
+				</control>
                 <!-- disable shortcut-->
                 <control type="radiobutton" id="300">
                     <width>510</width>

@@ -662,7 +662,8 @@
 					<onclick>RunScript(script.bingie.toolbox,action=setskinshortcutsproperty,header=$LOCALIZE[21427],property=widgetLimit,setting=widgetlimit)</onclick>
 					<visible>!String.IsEqual(Window.Property(groupname),mainmenu) + !String.IsEqual(Window.Property(groupname),powermenu)</visible>
                 </control>
-				
+
+
 				<control type="button" id="308"> <!--reset-->
 					<width>510</width>
 					<height>58</height>

@@ -27,7 +27,7 @@
         <property name="widgetSortBy" tag="property" attribute="name|widgetSortBy" />
         <property name="widgetSortOrder" tag="property" attribute="name|widgetSortOrder" />
         <property name="widgetLimit" tag="property" attribute="name|widgetLimit" />
-        <property name="widgetLimit">$INFO[Skin.String(WidgetsGlobalLimit)]</property>	
+        <property name="widgetLimit">$INFO[Skin.String(WidgetsGlobalLimit)]</property>
 		<property name="mainmenuid" tag="property" attribute="name|mainmenuid" />	
 			<property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[1]">1</property>
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[2]">2</property>
@@ -71,8 +71,8 @@
                 <param name="widgetSortBy" value="$SKINSHORTCUTS[widgetSortBy]" />
                 <param name="widgetSortOrder" value="$SKINSHORTCUTS[widgetSortOrder]" />
                 <param name="widgetLimit" value="$SKINSHORTCUTS[widgetLimit]" />
-            </include>			
-        </controls>         
+            </include>
+        </controls>
     </submenuOther>
 	<submenu include="search" name="searchmenu">
         <controls>
@@ -340,7 +340,7 @@
         <property name="widgetSortBy" tag="property" attribute="name|widgetSortBy" />
         <property name="widgetSortOrder" tag="property" attribute="name|widgetSortOrder" />
         <property name="widgetLimit" tag="property" attribute="name|widgetLimit" />
-        <property name="widgetLimit">$INFO[Skin.String(WidgetsGlobalLimit)]</property>	
+        <property name="widgetLimit">$INFO[Skin.String(WidgetsGlobalLimit)]</property>
 			<property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[1]">1</property>
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[2]">2</property>
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[3]">3</property>
@@ -360,8 +360,8 @@
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[17]">17</property>
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[18]">18</property>
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[19]">19</property>
-            <property name="widgetid">20</property>       
-        <controls>           
+            <property name="widgetid">20</property>
+        <controls>
             <include content="widget_base" condition="$PYTHON['true' if widgetPath else 'false']">
                 <param name="contentStyle" value="$SKINSHORTCUTS[contentStyle]" />
                 <param name="widgetid" value="$PYTHON[int(widgetid) + 6040]" />
@@ -383,9 +383,9 @@
                 <param name="widgetid" value="$PYTHON[int(widgetid) + 6040]" />
                 <param name="submenuid" value="$SKINSHORTCUTS[submenuid]" />
                 <param name="widgetName" value="$SKINSHORTCUTS[widgetName]" />
-            </include>			
-        </controls>  
-		</items>		
+            </include>
+        </controls>
+		</items>
 	 </submenu>
 	 <submenu include="tvshowhub" name="tvshowhub">
         <controls>
@@ -411,7 +411,7 @@
         <property name="widgetSortBy" tag="property" attribute="name|widgetSortBy" />
         <property name="widgetSortOrder" tag="property" attribute="name|widgetSortOrder" />
         <property name="widgetLimit" tag="property" attribute="name|widgetLimit" />
-        <property name="widgetLimit">$INFO[Skin.String(WidgetsGlobalLimit)]</property>	
+        <property name="widgetLimit">$INFO[Skin.String(WidgetsGlobalLimit)]</property>
 			<property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[1]">1</property>
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[2]">2</property>
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[3]">3</property>
@@ -431,8 +431,8 @@
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[17]">17</property>
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[18]">18</property>
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[19]">19</property>
-            <property name="widgetid">20</property>       
-        <controls>           
+            <property name="widgetid">20</property>
+        <controls>
             <include content="widget_base" condition="$PYTHON['true' if widgetPath else 'false']">
                 <param name="contentStyle" value="$SKINSHORTCUTS[contentStyle]" />
                 <param name="widgetid" value="$PYTHON[int(widgetid) + 6050]" />
@@ -454,9 +454,9 @@
                 <param name="widgetid" value="$PYTHON[int(widgetid) + 6050]" />
                 <param name="submenuid" value="$SKINSHORTCUTS[submenuid]" />
                 <param name="widgetName" value="$SKINSHORTCUTS[widgetName]" />
-            </include>			
-        </controls>  
-		</items>		
+            </include>
+        </controls>
+		</items>
 	 </submenu>
 	 <submenu include="newhub" name="newhub">
         <controls>
@@ -482,7 +482,7 @@
         <property name="widgetSortBy" tag="property" attribute="name|widgetSortBy" />
         <property name="widgetSortOrder" tag="property" attribute="name|widgetSortOrder" />
         <property name="widgetLimit" tag="property" attribute="name|widgetLimit" />
-        <property name="widgetLimit">$INFO[Skin.String(WidgetsGlobalLimit)]</property>	
+        <property name="widgetLimit">$INFO[Skin.String(WidgetsGlobalLimit)]</property>
 			<property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[1]">1</property>
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[2]">2</property>
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[3]">3</property>
@@ -502,8 +502,8 @@
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[17]">17</property>
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[18]">18</property>
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[19]">19</property>
-            <property name="widgetid">20</property>       
-        <controls>           
+            <property name="widgetid">20</property>
+        <controls>
             <include content="widget_base" condition="$PYTHON['true' if widgetPath else 'false']">
                 <param name="contentStyle" value="$SKINSHORTCUTS[contentStyle]" />
                 <param name="widgetid" value="$PYTHON[int(widgetid) + 6050]" />
@@ -525,9 +525,9 @@
                 <param name="widgetid" value="$PYTHON[int(widgetid) + 6050]" />
                 <param name="submenuid" value="$SKINSHORTCUTS[submenuid]" />
                 <param name="widgetName" value="$SKINSHORTCUTS[widgetName]" />
-            </include>			
-        </controls>  
-		</items>		
+            </include>
+        </controls>
+		</items>
 	 </submenu>
 	 <submenu include="musichub" name="musichub">
         <controls>
@@ -553,7 +553,7 @@
         <property name="widgetSortBy" tag="property" attribute="name|widgetSortBy" />
         <property name="widgetSortOrder" tag="property" attribute="name|widgetSortOrder" />
         <property name="widgetLimit" tag="property" attribute="name|widgetLimit" />
-        <property name="widgetLimit">$INFO[Skin.String(WidgetsGlobalLimit)]</property>	
+        <property name="widgetLimit">$INFO[Skin.String(WidgetsGlobalLimit)]</property>
 			<property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[1]">1</property>
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[2]">2</property>
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[3]">3</property>
@@ -573,8 +573,8 @@
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[17]">17</property>
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[18]">18</property>
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[19]">19</property>
-            <property name="widgetid">20</property>       
-        <controls>           
+            <property name="widgetid">20</property>
+        <controls>
             <include content="widget_base" condition="$PYTHON['true' if widgetPath else 'false']">
                 <param name="contentStyle" value="$SKINSHORTCUTS[contentStyle]" />
                 <param name="widgetid" value="$PYTHON[int(widgetid) + 6060]" />
@@ -596,9 +596,9 @@
                 <param name="widgetid" value="$PYTHON[int(widgetid) + 6060]" />
                 <param name="submenuid" value="$SKINSHORTCUTS[submenuid]" />
                 <param name="widgetName" value="$SKINSHORTCUTS[widgetName]" />
-            </include>			
-        </controls>  
-		</items>		
+            </include>
+        </controls>
+		</items>
 	 </submenu>
 	 <submenu include="customhub" name="customhub">
         <controls>
@@ -624,7 +624,7 @@
         <property name="widgetSortBy" tag="property" attribute="name|widgetSortBy" />
         <property name="widgetSortOrder" tag="property" attribute="name|widgetSortOrder" />
         <property name="widgetLimit" tag="property" attribute="name|widgetLimit" />
-        <property name="widgetLimit">$INFO[Skin.String(WidgetsGlobalLimit)]</property>	
+        <property name="widgetLimit">$INFO[Skin.String(WidgetsGlobalLimit)]</property>
 			<property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[1]">1</property>
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[2]">2</property>
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[3]">3</property>
@@ -644,8 +644,8 @@
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[17]">17</property>
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[18]">18</property>
             <property name="widgetid" tag="property" attribute="name|id" value="$NUMBER[19]">19</property>
-            <property name="widgetid">20</property>       
-        <controls>           
+            <property name="widgetid">20</property>
+        <controls>
             <include content="widget_base" condition="$PYTHON['true' if widgetPath else 'false']">
                 <param name="contentStyle" value="$SKINSHORTCUTS[contentStyle]" />
                 <param name="widgetid" value="$PYTHON[int(widgetid) + 6070]" />
@@ -667,9 +667,9 @@
                 <param name="widgetid" value="$PYTHON[int(widgetid) + 6070]" />
                 <param name="submenuid" value="$SKINSHORTCUTS[submenuid]" />
                 <param name="widgetName" value="$SKINSHORTCUTS[widgetName]" />
-            </include>			
-        </controls>  
-		</items>		
+            </include>
+        </controls>
+		</items>
 	 </submenu>
 	 <submenu include="mylisthub" name="mylisthub">
         <controls>

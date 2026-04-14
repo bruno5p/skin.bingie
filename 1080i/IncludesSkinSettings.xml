@@ -2399,6 +2399,13 @@
             <include>SkinSettings_Header</include>
             <label>$LOCALIZE[35226]</label>
         </control>
+        <!-- Font selection (for Japanese/CJK character support) -->
+        <control type="button" id="31583">
+            <include>SkinSettings_Button</include>
+            <label>$LOCALIZE[31580]</label>
+            <label2>$INFO[Skin.String(Font.label)]</label2>
+            <onclick>RunScript(script.bingie.toolbox,action=setfont,header=$LOCALIZE[31580])</onclick>
+        </control>
 		<control type="button" id="31344">
             <include>SkinSettings_Button</include>
             <label>$LOCALIZE[31344]</label>

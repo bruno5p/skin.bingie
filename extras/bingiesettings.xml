@@ -54,7 +54,7 @@
     <setting id="$VAR[catnum]widgetlimit" value="100" label="100" condition="Window.IsActive(1106)"/>
     <setting id="$VAR[catnum]widgetlimit" value="150" label="150" condition="Window.IsActive(1106)"/>
     <setting id="$VAR[catnum]widgetlimit" value="200" label="200" condition="Window.IsActive(1106)"/>
-	
+
 	<!-- Widget Limit -->
 	<setting id="widgetlimit" value="$INFO[Skin.String(WidgetsGlobalLimit)]" label="$LOCALIZE[571]"/>
     <setting id="widgetlimit" value="$NUMBER[5]" label="$NUMBER[5]"/>
@@ -68,7 +68,7 @@
     <setting id="widgetlimit" value="$NUMBER[100]" label="$NUMBER[100]"/>
     <setting id="widgetlimit" value="$NUMBER[150]" label="$NUMBER[150]"/>
     <setting id="widgetlimit" value="$NUMBER[200]" label="$NUMBER[200]"/>
-	
+
 	<!-- Widget Target -->
     <setting id="$VAR[catnum]widgettarget" value="videos" label="$LOCALIZE[3]"/>
     <setting id="$VAR[catnum]widgettarget" value="music" label="$LOCALIZE[2]"/>
@@ -236,7 +236,14 @@
 	<setting id="scrollbar_visibility" value="" label="$LOCALIZE[571]" condition="" icon="" description=""/>
     <setting id="scrollbar_visibility" value="always_show" label="$LOCALIZE[31125]" condition="" icon="" description=""/>
     <setting id="scrollbar_visibility" value="always_hide" label="$LOCALIZE[31067]" condition="" icon="" description=""/>
-	
+
+	<!-- font selection -->
+	<setting id="Font" value="" label="$LOCALIZE[31581]" condition="" icon="" description=""/>
+	<setting id="Font" value="Arial" label="$LOCALIZE[31583]" condition="" icon="" description=""/>
+	<setting id="Font" value="NotoSansJPBold" label="$LOCALIZE[31584]" condition="" icon="" description=""/>
+	<setting id="Font" value="NotoSans" label="$LOCALIZE[31585]" condition="" icon="" description=""/>
+	<setting id="Font" value="Inter" label="$LOCALIZE[31582]" condition="" icon="" description=""/>
+
 	<!-- ratings to show on home - multiselect -->
     <setting id="ratings" value="||MULTISELECT||" label="" condition="" icon="" description="">
         <option id="ratings_IMDB" label="$LOCALIZE[31357]" condition=""/>

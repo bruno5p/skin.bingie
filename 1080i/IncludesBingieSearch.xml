@@ -449,10 +449,10 @@
             <radioposy>20</radioposy>
             <radiowidth>60</radiowidth>
             <radioheight>40</radioheight>
-            <textureradioonfocus colordiffuse="$INFO[Skin.String(BingieButtonFocusTextColor)]">shortcuts/search.png</textureradioonfocus>
-            <textureradioofffocus colordiffuse="$INFO[Skin.String(BingieButtonFocusTextColor)]">shortcuts/search.png</textureradioofffocus>
-            <textureradioonnofocus colordiffuse="$INFO[Skin.String(BingieButtonTextColor)]">shortcuts/search.png</textureradioonnofocus>
-            <textureradiooffnofocus colordiffuse="$INFO[Skin.String(BingieButtonTextColor)]">shortcuts/search.png</textureradiooffnofocus>
+            <textureradioonfocus colordiffuse="$INFO[Skin.String(BingieButtonFocusTextColor)]">bingie/keyboard/search.png</textureradioonfocus>
+            <textureradioofffocus colordiffuse="$INFO[Skin.String(BingieButtonFocusTextColor)]">bingie/keyboard/search.png</textureradioofffocus>
+            <textureradioonnofocus colordiffuse="$INFO[Skin.String(BingieButtonTextColor)]">bingie/keyboard/search.png</textureradioonnofocus>
+            <textureradiooffnofocus colordiffuse="$INFO[Skin.String(BingieButtonTextColor)]">bingie/keyboard/search.png</textureradiooffnofocus>
             <onup>312</onup>
             <ondown>1001</ondown>
             <onclick condition="!String.IsEmpty(Skin.String(CustomSearchTerm))">SetFocus(77777)</onclick>
@@ -467,10 +467,10 @@
             <radioposy>20</radioposy>
             <radiowidth>40</radiowidth>
             <radioheight>40</radioheight>
-            <textureradioonfocus colordiffuse="$INFO[Skin.String(BingieButtonFocusTextColor)]">defaultaddonlyrics.png</textureradioonfocus>
-            <textureradioofffocus colordiffuse="$INFO[Skin.String(BingieButtonFocusTextColor)]">defaultaddonlyrics.png</textureradioofffocus>
-            <textureradioonnofocus colordiffuse="$INFO[Skin.String(BingieButtonTextColor)]">defaultaddonlyrics.png</textureradioonnofocus>
-            <textureradiooffnofocus colordiffuse="$INFO[Skin.String(BingieButtonTextColor)]">defaultaddonlyrics.png</textureradiooffnofocus>
+            <textureradioonfocus colordiffuse="$INFO[Skin.String(BingieButtonFocusTextColor)]">bingie/keyboard/mic.png</textureradioonfocus>
+            <textureradioofffocus colordiffuse="$INFO[Skin.String(BingieButtonFocusTextColor)]">bingie/keyboard/mic.png</textureradioofffocus>
+            <textureradioonnofocus colordiffuse="$INFO[Skin.String(BingieButtonTextColor)]">bingie/keyboard/mic.png</textureradioonnofocus>
+            <textureradiooffnofocus colordiffuse="$INFO[Skin.String(BingieButtonTextColor)]">bingie/keyboard/mic.png</textureradiooffnofocus>
             <onup>312</onup>
             <ondown>1001</ondown>
             <onclick>noop</onclick>

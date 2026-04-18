@@ -581,8 +581,9 @@
 								<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(OtakuLocalEpisodesPath)],return)</onclick>
 							</control>
 
-							<!-- Trailer -->
+							<!-- Trailer (hidden: removed from menu) -->
                             <control type="radiobutton" id="54">
+                                <visible>false</visible>
                                 <visible>Skin.HasSetting(videoinfo_button_trailer)</visible>
 								<visible>[[String.IsEqual(Skin.String(AutoYoutubeTrailer),true) | !String.Contains(ListItem.Trailer,plugin) + !String.IsEmpty(ListItem.DBID)] + [$EXP[IsTvShowDBTypeNoFallback] | $EXP[IsMovieDBTypeNoFallback] | $EXP[IsEpisodeDBTypeNoFallback]]]</visible>
                                 <visible>!$EXP[IsEpisodeDBType]</visible>
@@ -625,8 +626,9 @@
 								<onclick condition="[Control.IsVisible(51) + Control.IsVisible(5050) + Container(5050).ListItem.IsResumable] | [Control.IsVisible(8181) + Control.IsVisible(1234) + Container(1234).ListItem.IsResumable]">SetProperty(ShowPlayBeginning,1)</onclick>
 							 </control>
 
-							<!--Similar Button	-->	
+							<!--Similar Button	-->
                             <control type="radiobutton" id="62">
+                                <visible>![String.StartsWith(ListItem.Path,plugin://plugin.video.otaku.testing/) | !String.IsEmpty(ListItem.UniqueID(mal))]</visible>
                                 <visible>Skin.HasSetting(videoinfo_button_similar)</visible>
 								<visible>!$EXP[IsSetDBType] + !Window.IsActive(1116) + !Window.IsActive(tvrecordings)</visible>
                                 <include content="Bingie_InfoDialog_Button_Texture">
@@ -737,8 +739,9 @@
 								<onclick condition="String.IsEmpty(ListItem.Property(tmdb_id))">RunScript(plugin.video.tmdb.bingie.helper,sync_trakt,tmdb_id=$INFO[Container(17195).ListItem.Property(tmdb_id)],$VAR[Path_Param_Type],sync_type=watchlist)</onclick>
                             </control>
 							
-							<!-- Trakt Manager -->
+							<!-- Trakt Manager (hidden: removed from menu) -->
                             <control type="radiobutton" id="562">
+                                <visible>false</visible>
 								<visible>!$EXP[IsEpisodeDBType]</visible>
                                 <visible>Skin.HasSetting(videoinfo_button_trakt)</visible>
                                 <visible>$EXP[IsTvShowDBTypeNoFallback] | $EXP[IsMovieDBTypeNoFallback]</visible>
@@ -771,7 +774,7 @@
 								<visible>[String.StartsWith(ListItem.Path,plugin://plugin.video.otaku.testing/) | !String.IsEmpty(ListItem.UniqueID(mal))]</visible>
 								<visible>!$EXP[IsSetDBType] + !Window.IsActive(1116) + !Window.IsActive(tvrecordings)</visible>
 								<include content="Bingie_InfoDialog_Button_Texture">
-									<param name="radiotexture" value="dialogs/videoinfo/info/trakt.png"/>
+									<param name="radiotexture" value="dialogs/videoinfo/info/mal_big.png"/>
 								</include>
 								<textcolor>$INFO[Skin.String(BingieButtonTextColor)]</textcolor>
 								<focusedcolor>$INFO[Skin.String(BingieSecondaryButtonFocusTextColor)]</focusedcolor>
@@ -794,6 +797,7 @@
 
 							<!--Credit & More Info Button-->
                             <control type="radiobutton" id="63">
+                                <visible>![String.StartsWith(ListItem.Path,plugin://plugin.video.otaku.testing/) | !String.IsEmpty(ListItem.UniqueID(mal))]</visible>
                                 <visible>Skin.HasSetting(videoinfo_button_moreinfo)</visible>
 								<visible>!$EXP[IsSetDBType] + !Window.IsActive(1116) + !Window.IsActive(tvrecordings)</visible>
                                 <include content="Bingie_InfoDialog_Button_Texture">
@@ -821,8 +825,9 @@
                                 <onclick>SetFocus(8999,0)</onclick>	
 							</control>
 							
-							<!-- Wikipedia -->
+							<!-- Wikipedia (hidden: removed from menu) -->
                             <control type="radiobutton" id="631">
+                                <visible>false</visible>
                                 <visible>Skin.HasSetting(videoinfo_button_wikipedia)</visible>
 								<visible>![String.StartsWith(ListItem.Path,plugin://plugin.video.otaku.testing/) | !String.IsEmpty(ListItem.UniqueID(mal))]</visible>
                                 <include content="Bingie_InfoDialog_Button_Texture">
@@ -1894,8 +1899,9 @@
 								<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(OtakuLocalEpisodesPath)],return)</onclick>
 							</control>
 
-							<!-- Trailer -->
+							<!-- Trailer (hidden: removed from menu) -->
                             <control type="radiobutton" id="54">
+                                <visible>false</visible>
                                 <visible>Skin.HasSetting(videoinfo_button_trailer)</visible>
 								<visible>[[String.IsEqual(Skin.String(AutoYoutubeTrailer),true) | !String.Contains(ListItem.Trailer,plugin) + !String.IsEmpty(ListItem.DBID)] + [$EXP[IsTvShowDBTypeNoFallback] | $EXP[IsMovieDBTypeNoFallback] | $EXP[IsEpisodeDBTypeNoFallback]]]</visible>
                                 <visible>!$EXP[IsEpisodeDBType]</visible>
@@ -2007,8 +2013,9 @@
 								<onclick condition="String.IsEmpty(ListItem.Property(tmdb_id))">RunScript(plugin.video.tmdb.bingie.helper,sync_trakt,tmdb_id=$INFO[Container(17195).ListItem.Property(tmdb_id)],$VAR[Path_Param_Type],sync_type=favorites)</onclick>
                             </control>
 							
-							<!-- Trakt Manager -->
+							<!-- Trakt Manager (hidden: removed from menu) -->
                             <control type="radiobutton" id="562">
+                                <visible>false</visible>
                                 <visible>Skin.HasSetting(videoinfo_button_trakt)</visible>
 								<visible>!$EXP[IsSetDBType] + !Window.IsActive(1116) + !Window.IsActive(tvrecordings)</visible>
 								<visible>![String.StartsWith(ListItem.Path,plugin://plugin.video.otaku.testing/) | !String.IsEmpty(ListItem.UniqueID(mal))]</visible>
@@ -2035,7 +2042,7 @@
 								<visible>!$EXP[IsSetDBType] + !Window.IsActive(1116) + !Window.IsActive(tvrecordings)</visible>
 								<include>Bingie_InfoDialog_Button_Default_Defs</include>
 								<include content="Bingie_InfoDialog_Button_Texture">
-									<param name="radiotexture" value="dialogs/videoinfo/info/trakt.png"/>
+									<param name="radiotexture" value="dialogs/videoinfo/info/mal.png"/>
 								</include>
 								<label>MAL Status</label>
 								<radioposx>17</radioposx>
@@ -2066,6 +2073,7 @@
 							
 							<!--Credit & More Info Button-->
                             <control type="radiobutton" id="61">
+                                <visible>![String.StartsWith(ListItem.Path,plugin://plugin.video.otaku.testing/) | !String.IsEmpty(ListItem.UniqueID(mal))]</visible>
                                 <visible>Skin.HasSetting(videoinfo_button_cast)</visible>
 								<visible>!$EXP[IsSetDBType] + !Window.IsActive(1116) + !Window.IsActive(tvrecordings)</visible>
                                 <include>Bingie_InfoDialog_Button_Default_Defs</include>
@@ -2081,8 +2089,9 @@
                                 <onclick>SetFocus(8999,0)</onclick>									
                             </control>														
 							
-							<!--Wikipedia-->
+							<!--Wikipedia (hidden: removed from menu)-->
                             <control type="radiobutton" id="611">
+                                <visible>false</visible>
                                 <visible>Skin.HasSetting(videoinfo_button_wikipedia)</visible>
 								<visible>![String.StartsWith(ListItem.Path,plugin://plugin.video.otaku.testing/) | !String.IsEmpty(ListItem.UniqueID(mal))]</visible>
                                 <include>Bingie_InfoDialog_Button_Default_Defs</include>
@@ -2100,6 +2109,7 @@
 
 							<!--Similar Button-->
                             <control type="radiobutton" id="62">
+                                <visible>![String.StartsWith(ListItem.Path,plugin://plugin.video.otaku.testing/) | !String.IsEmpty(ListItem.UniqueID(mal))]</visible>
                                 <visible>Skin.HasSetting(videoinfo_button_similar)</visible>
 								<visible>!$EXP[IsSetDBType] + !Window.IsActive(1116) + !Window.IsActive(tvrecordings)</visible>
                                 <include>Bingie_InfoDialog_Button_Default_Defs</include>

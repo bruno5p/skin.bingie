@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BINGIE -->
+<window type="dialog" id="1160">
+	<visible>!String.IsEmpty(Window(home).Property(ClearSearchTerm))</visible>
+	<visible>Window.IsVisible(virtualkeyboard) + Window.IsActive(1109)</visible>
+	<!-- send 40 backspaces to clear any reasonable search term length -->
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<onload>SendClick(10103,8)</onload>
+	<!-- done action -->
+	<onload>SendClick(10103,300)</onload>
+	<onunload>ClearProperty(ClearSearchTerm,home)</onunload>
+	<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+	<controls/>
+</window>

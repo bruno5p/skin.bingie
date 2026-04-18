@@ -438,14 +438,14 @@
         </definition>
     </include>
 
-    <!-- Toolbar Row A: Search/Enter(4-wide) | Mic(1-wide) -->
+    <!-- Toolbar Row A: Search/Enter(3-wide) | Clear(2-wide) -->
     <include name="SearchKeyboardRow_ToolbarA_Row">
-        <!-- Enter / Go to Results (4-wide = 290px) -->
+        <!-- Enter / Go to Results (3-wide = 220px) -->
         <control type="radiobutton" id="12">
             <height>search_key_size</height>
-            <width>290</width>
+            <width>220</width>
             <label/>
-            <radioposx>115</radioposx>
+            <radioposx>80</radioposx>
             <radioposy>20</radioposy>
             <radiowidth>60</radiowidth>
             <radioheight>40</radioheight>
@@ -458,22 +458,24 @@
             <onclick condition="!String.IsEmpty(Skin.String(CustomSearchTerm))">SetFocus(77777)</onclick>
             <include>SearchKeyDefs</include>
         </control>
-        <!-- Voice/Mic (1-wide = 80px) -->
+        <!-- Clear search text (2-wide = 150px) -->
         <control type="radiobutton" id="14">
             <height>search_key_size</height>
-            <width>search_key_size</width>
+            <width>150</width>
             <label/>
-            <radioposx>20</radioposx>
+            <radioposx>45</radioposx>
             <radioposy>20</radioposy>
-            <radiowidth>40</radiowidth>
+            <radiowidth>60</radiowidth>
             <radioheight>40</radioheight>
-            <textureradioonfocus colordiffuse="$INFO[Skin.String(BingieButtonFocusTextColor)]">bingie/keyboard/mic.png</textureradioonfocus>
-            <textureradioofffocus colordiffuse="$INFO[Skin.String(BingieButtonFocusTextColor)]">bingie/keyboard/mic.png</textureradioofffocus>
-            <textureradioonnofocus colordiffuse="$INFO[Skin.String(BingieButtonTextColor)]">bingie/keyboard/mic.png</textureradioonnofocus>
-            <textureradiooffnofocus colordiffuse="$INFO[Skin.String(BingieButtonTextColor)]">bingie/keyboard/mic.png</textureradiooffnofocus>
+            <textureradioonfocus colordiffuse="$INFO[Skin.String(BingieButtonFocusTextColor)]">dialogs/videoinfo/info/refresh.png</textureradioonfocus>
+            <textureradioofffocus colordiffuse="$INFO[Skin.String(BingieButtonFocusTextColor)]">dialogs/videoinfo/info/refresh.png</textureradioofffocus>
+            <textureradioonnofocus colordiffuse="$INFO[Skin.String(BingieButtonTextColor)]">dialogs/videoinfo/info/refresh.png</textureradioonnofocus>
+            <textureradiooffnofocus colordiffuse="$INFO[Skin.String(BingieButtonTextColor)]">dialogs/videoinfo/info/refresh.png</textureradiooffnofocus>
             <onup>312</onup>
             <ondown>1001</ondown>
-            <onclick>noop</onclick>
+            <onclick>SetProperty(ClearSearchTerm,1,Home)</onclick>
+            <onclick>Skin.SetString(CustomSearchTerm)</onclick>
+            <onclick>SetProperty(CustomSearch,1,home)</onclick>
             <include>SearchKeyDefs</include>
         </control>
     </include>

@@ -45,7 +45,7 @@
             <top>80</top>
             <include>No_Circular_Left</include>
             <left>65</left>
-            <height>500</height>
+            <height>640</height>
             <orientation>vertical</orientation>
             <itemgap>-10</itemgap>
             <defaultcontrol>101</defaultcontrol>
@@ -55,63 +55,105 @@
             <onright condition="!Integer.IsGreater(Container(77777).NumItems,0)">9900</onright>
 			<onback>900</onback>
             <onback>SetFocus(900,$INFO[Window(Home).Property(menupos)])</onback>
-            <!-- Space / Backspace Row -->
+            <!-- Toolbar Row A: Search(2w) | Mic(1w) | Lang(1w) -->
             <include content="SearchKeyboardRow">
                 <param name="id" value="1000" />
                 <param name="onleft" value="SetFocus(900,$INFO[Window(Home).Property(menupos)])" />
                 <param name="onright" value="77777" />
-                <param name="row_include" value="SearchKeyboardRow_BackspaceAndSpace_Row" />
+                <param name="row_include" value="SearchKeyboardRow_ToolbarA_Row" />
             </include>
-            <!-- First Row -->
+            <!-- Toolbar Row B: Space(2w) | Back/Del(2w) -->
             <include content="SearchKeyboardRow">
                 <param name="id" value="1001" />
                 <param name="onleft" value="SetFocus(900,$INFO[Window(Home).Property(menupos)])" />
                 <param name="onright" value="77777" />
+                <param name="row_include" value="SearchKeyboardRow_ToolbarB_Row" />
+            </include>
+            <!-- Latin Row 1: a-e -->
+            <include content="SearchKeyboardRow">
+                <param name="id" value="1010" />
+                <param name="visibility" value="!Skin.HasSetting(HiraganaSearchMode)" />
+                <param name="onleft" value="SetFocus(900,$INFO[Window(Home).Property(menupos)])" />
+                <param name="onright" value="77777" />
                 <param name="row_include" value="SearchKeyboardRow_First_Row" />
             </include>
-            <!-- Second Row -->
+            <!-- Latin Row 2: f-j -->
             <include content="SearchKeyboardRow">
-                <param name="id" value="1002" />
+                <param name="id" value="1011" />
+                <param name="visibility" value="!Skin.HasSetting(HiraganaSearchMode)" />
                 <param name="onleft" value="SetFocus(900,$INFO[Window(Home).Property(menupos)])" />
                 <param name="onright" value="77777" />
                 <param name="row_include" value="SearchKeyboardRow_Second_Row" />
             </include>
-            <!-- Third Row -->
+            <!-- Latin Row 3: k-o -->
             <include content="SearchKeyboardRow">
-                <param name="id" value="1003" />
+                <param name="id" value="1012" />
+                <param name="visibility" value="!Skin.HasSetting(HiraganaSearchMode)" />
                 <param name="onleft" value="SetFocus(900,$INFO[Window(Home).Property(menupos)])" />
                 <param name="onright" value="77777" />
                 <param name="row_include" value="SearchKeyboardRow_Third_Row" />
             </include>
-            <!-- Fourth Row -->
+            <!-- Latin Row 4: p-t -->
             <include content="SearchKeyboardRow">
-                <param name="id" value="1004" />
+                <param name="id" value="1013" />
+                <param name="visibility" value="!Skin.HasSetting(HiraganaSearchMode)" />
                 <param name="onleft" value="SetFocus(900,$INFO[Window(Home).Property(menupos)])" />
                 <param name="onright" value="77777" />
                 <param name="row_include" value="SearchKeyboardRow_Fourth_Row" />
             </include>
-            <!-- Fifth Row -->
+            <!-- Latin Row 5: u-y -->
             <include content="SearchKeyboardRow">
-                <param name="id" value="1005" />
+                <param name="id" value="1014" />
+                <param name="visibility" value="!Skin.HasSetting(HiraganaSearchMode)" />
                 <param name="onleft" value="SetFocus(900,$INFO[Window(Home).Property(menupos)])" />
                 <param name="onright" value="77777" />
                 <param name="row_include" value="SearchKeyboardRow_Fifth_Row" />
             </include>
-            <!-- Sixth Row -->
+            <!-- Latin Row 6: z,0-3 -->
             <include content="SearchKeyboardRow">
-                <param name="id" value="1006" />
+                <param name="id" value="1015" />
+                <param name="visibility" value="!Skin.HasSetting(HiraganaSearchMode)" />
                 <param name="onleft" value="SetFocus(900,$INFO[Window(Home).Property(menupos)])" />
                 <param name="onright" value="77777" />
                 <param name="row_include" value="SearchKeyboardRow_Sixth_Row" />
             </include>
+            <!-- Latin Row 7: 4-8 -->
+            <include content="SearchKeyboardRow">
+                <param name="id" value="1016" />
+                <param name="visibility" value="!Skin.HasSetting(HiraganaSearchMode)" />
+                <param name="onleft" value="SetFocus(900,$INFO[Window(Home).Property(menupos)])" />
+                <param name="onright" value="77777" />
+                <param name="row_include" value="SearchKeyboardRow_Seventh_Row" />
+            </include>
+            <!-- Latin Row 8: 9 -->
+            <include content="SearchKeyboardRow">
+                <param name="id" value="1017" />
+                <param name="visibility" value="!Skin.HasSetting(HiraganaSearchMode)" />
+                <param name="onleft" value="SetFocus(900,$INFO[Window(Home).Property(menupos)])" />
+                <param name="onright" value="77777" />
+                <param name="row_include" value="SearchKeyboardRow_Eighth_Row" />
+            </include>
+            <!-- Hiragana Rows 1-10 (scrollable, 5-col gojuuon; Row 10 has ゛/゜ transform buttons) -->
+            <include content="SearchKeyboardRow"><param name="id" value="2001" /><param name="visibility" value="Skin.HasSetting(HiraganaSearchMode)" /><param name="onleft" value="SetFocus(900,$INFO[Window(Home).Property(menupos)])" /><param name="onright" value="77777" /><param name="row_include" value="SearchKeyboardRow_Hiragana_Row1" /></include>
+            <include content="SearchKeyboardRow"><param name="id" value="2002" /><param name="visibility" value="Skin.HasSetting(HiraganaSearchMode)" /><param name="onleft" value="SetFocus(900,$INFO[Window(Home).Property(menupos)])" /><param name="onright" value="77777" /><param name="row_include" value="SearchKeyboardRow_Hiragana_Row2" /></include>
+            <include content="SearchKeyboardRow"><param name="id" value="2003" /><param name="visibility" value="Skin.HasSetting(HiraganaSearchMode)" /><param name="onleft" value="SetFocus(900,$INFO[Window(Home).Property(menupos)])" /><param name="onright" value="77777" /><param name="row_include" value="SearchKeyboardRow_Hiragana_Row3" /></include>
+            <include content="SearchKeyboardRow"><param name="id" value="2004" /><param name="visibility" value="Skin.HasSetting(HiraganaSearchMode)" /><param name="onleft" value="SetFocus(900,$INFO[Window(Home).Property(menupos)])" /><param name="onright" value="77777" /><param name="row_include" value="SearchKeyboardRow_Hiragana_Row4" /></include>
+            <include content="SearchKeyboardRow"><param name="id" value="2005" /><param name="visibility" value="Skin.HasSetting(HiraganaSearchMode)" /><param name="onleft" value="SetFocus(900,$INFO[Window(Home).Property(menupos)])" /><param name="onright" value="77777" /><param name="row_include" value="SearchKeyboardRow_Hiragana_Row5" /></include>
+            <include content="SearchKeyboardRow"><param name="id" value="2006" /><param name="visibility" value="Skin.HasSetting(HiraganaSearchMode)" /><param name="onleft" value="SetFocus(900,$INFO[Window(Home).Property(menupos)])" /><param name="onright" value="77777" /><param name="row_include" value="SearchKeyboardRow_Hiragana_Row6" /></include>
+            <include content="SearchKeyboardRow"><param name="id" value="2007" /><param name="visibility" value="Skin.HasSetting(HiraganaSearchMode)" /><param name="onleft" value="SetFocus(900,$INFO[Window(Home).Property(menupos)])" /><param name="onright" value="77777" /><param name="row_include" value="SearchKeyboardRow_Hiragana_Row7" /></include>
+            <include content="SearchKeyboardRow"><param name="id" value="2008" /><param name="visibility" value="Skin.HasSetting(HiraganaSearchMode)" /><param name="onleft" value="SetFocus(900,$INFO[Window(Home).Property(menupos)])" /><param name="onright" value="77777" /><param name="row_include" value="SearchKeyboardRow_Hiragana_Row8" /></include>
+            <include content="SearchKeyboardRow"><param name="id" value="2009" /><param name="visibility" value="Skin.HasSetting(HiraganaSearchMode)" /><param name="onleft" value="SetFocus(900,$INFO[Window(Home).Property(menupos)])" /><param name="onright" value="77777" /><param name="row_include" value="SearchKeyboardRow_Hiragana_Row9" /></include>
+            <include content="SearchKeyboardRow"><param name="id" value="2010" /><param name="visibility" value="Skin.HasSetting(HiraganaSearchMode)" /><param name="onleft" value="SetFocus(900,$INFO[Window(Home).Property(menupos)])" /><param name="onright" value="77777" /><param name="row_include" value="SearchKeyboardRow_Hiragana_Row10" /></include>
+            <include content="SearchKeyboardRow"><param name="id" value="2011" /><param name="visibility" value="Skin.HasSetting(HiraganaSearchMode)" /><param name="onleft" value="SetFocus(900,$INFO[Window(Home).Property(menupos)])" /><param name="onright" value="77777" /><param name="row_include" value="SearchKeyboardRow_Hiragana_Row11" /></include>
         </control>
 
         <!-- Auto-Complete & Static Suggestions List -->
+        <!-- top=730: keyboard occupies top=80+640=720, suggestions start 10px below -->
         <include content="Search_Suggestions_Container">
             <include>No_Circular_Left</include>
             <include>SearchSuggestionsAnim</include>
             <param name="id" value="1007" />
-            <param name="top" value="605" />
+            <param name="top" value="730" />
             <param name="width" value="421" />
             <param name="height" value="910" />
             <param name="onitemfocus" value="SetProperty(SuggestionPath,$ESCINFO[ListItem.Property(path)])" />
